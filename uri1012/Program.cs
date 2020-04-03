@@ -12,10 +12,10 @@ namespace uri1012
             double c = 5.2;
             double triangulo, circulo, trapezio, quadrado, retangulo;
 
-            string[] valores = Console.ReadLine().Split(' ');
-            a = double.Parse(valores[0]);
-            b = double.Parse(valores[1]);
-            c = double.Parse(valores[2]);
+            string[] vet = Console.ReadLine().Split(' ');
+            a = double.Parse(vet[0]);
+            b = double.Parse(vet[1]);
+            c = double.Parse(vet[2]);
 
             triangulo = a * c / 2.0;
             circulo = 3.14159 * c * c;
@@ -23,11 +23,11 @@ namespace uri1012
             quadrado = b * b;
             retangulo = a * b;
 
-            Console.WriteLine("TRIANGULO: " + triangulo.ToString("F3"));
-            Console.WriteLine("CIRCULO: " + circulo.ToString("F3"));
-            Console.WriteLine("TRAPEZIO: " + trapezio.ToString("F3"));
-            Console.WriteLine("QUADRADO: " + quadrado.ToString("F3"));
-            Console.WriteLine("RETANGULO: " + triangulo.ToString("F3"));
+            Console.WriteLine("TRIANGULO: " + triangulo.ToString("F3", CultureInfo.InvariantCulture));
+            Console.WriteLine("CIRCULO: " + circulo.ToString("F3", CultureInfo.InvariantCulture));
+            Console.WriteLine("TRAPEZIO: " + trapezio.ToString("F3", CultureInfo.InvariantCulture));
+            Console.WriteLine("QUADRADO: " + quadrado.ToString("F3", CultureInfo.InvariantCulture));
+            Console.WriteLine("RETANGULO: " + triangulo.ToString("F3", CultureInfo.InvariantCulture));
         }
     }
 }
