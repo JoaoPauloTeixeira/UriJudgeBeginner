@@ -14,6 +14,7 @@ namespace uri1002
             area = 3.14159 * (raio * raio);
 
             Console.WriteLine("A="+area.ToString("F4"));
+            Console.WriteLine("Testando conflito");
         }
     }
 }
