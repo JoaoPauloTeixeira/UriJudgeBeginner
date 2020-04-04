@@ -14,7 +14,7 @@ namespace uri1014
             Y = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             kml = (double) X / Y;
-            Console.WriteLine(kml.ToString("F3", CultureInfo.InvariantCulture) + "km/l");
+            Console.WriteLine(kml.ToString("F3", CultureInfo.InvariantCulture) + " km/l");
         }
     }
 }
